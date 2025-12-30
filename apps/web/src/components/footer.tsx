@@ -146,7 +146,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
-              <p>© 2024 LLMs247. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} LLMs247. All rights reserved.</p>
               <div className="flex items-center gap-4">
                 <a href="https://llms247.com/privacy" className="hover:text-white transition-colors">
                   Privacy Policy
