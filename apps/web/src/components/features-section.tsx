@@ -122,11 +122,13 @@ export default function FeaturesSection() {
           <p className="text-gray-400 mb-6">
             Ready to simplify your AI infrastructure?
           </p>
-          <motion.button
+          <motion.a
+            href="https://app.llms247.com"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium shadow-lg shadow-blue-500/25 transition-all duration-300"
-            onClick={() => window.open("https://app.llms247.com", "_blank")}
           >
             Start Building Today
             <motion.svg
@@ -139,7 +141,7 @@ export default function FeaturesSection() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </motion.svg>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>
