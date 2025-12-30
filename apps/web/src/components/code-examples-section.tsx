@@ -205,17 +205,21 @@ export default function CodeExamplesSection() {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg shadow-blue-500/25"
-                onClick={() => window.open("https://app.llms247.com", "_blank")}
+                asChild
               >
-                Get Free API Key
+                <a href="https://app.llms247.com" target="_blank" rel="noopener noreferrer">
+                  Get Free API Key
+                </a>
               </Button>
               <Button 
                 size="lg"
                 variant="outline"
                 className="border-white/20 text-white hover:bg-white/10"
-                onClick={() => window.open("https://docs.llms247.com", "_blank")}
+                asChild
               >
-                View Full Documentation
+                <a href="https://docs.llms247.com" target="_blank" rel="noopener noreferrer">
+                  View Full Documentation
+                </a>
               </Button>
             </div>
           </div>
