@@ -55,15 +55,19 @@ export default function LandingHeader() {
             <Button 
               variant="ghost" 
               className="text-gray-300 hover:text-white"
-              onClick={() => window.open("https://docs.llms247.com", "_blank")}
+              asChild
             >
-              View Docs
+              <a href="https://docs.llms247.com" target="_blank" rel="noopener noreferrer">
+                View Docs
+              </a>
             </Button>
             <Button 
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg shadow-blue-500/25"
-              onClick={() => window.open("https://app.llms247.com", "_blank")}
+              asChild
             >
-              Get Started
+              <a href="https://app.llms247.com" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
             </Button>
           </div>
 
