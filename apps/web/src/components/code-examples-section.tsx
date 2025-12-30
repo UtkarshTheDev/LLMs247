@@ -69,9 +69,14 @@ export default function CodeExamplesSection() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const copyToClipboard = async (code: string, index: number) => {
-    await navigator.clipboard.writeText(code);
-    setCopiedIndex(index);
-    setTimeout(() => setCopiedIndex(null), 2000);
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 2000);
+    } catch (error) {
+      console.error('Failed to copy to clipboard:', error);
+      // Optionally: show a toast notification or fallback UI
+    }
   };
 
   return (
